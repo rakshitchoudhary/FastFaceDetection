@@ -14,16 +14,6 @@ needs. Once you decided to use BRFv4 in your project, please contact us for a co
 
 + http://www.tastenkunst.com/#/contact
 
-### Visit us online.
-
-+ [Github](https://github.com/Tastenkunst)
-+ [Demo](https://tastenkunst.github.io/brfv4_javascript_examples/)
-+ [Docs / API](https://tastenkunst.github.io/brfv4_docs/)
-+ [What can I do with it?](https://tastenkunst.github.io/brfv4_docs/what_can_i_do_with_it.html)
-+ [Website](https://www.beyond-reality-face.com)
-+ [Facebook](https://www.facebook.com/BeyondRealityFace)
-+ [Twitter](https://twitter.com/tastenkunst)
-
 ### Getting started.
 
 To test BRFv4 simply visit the Javascript demo site:
@@ -34,25 +24,8 @@ This page also includes all available packages for download.
 
 ### Which platforms does it support?
 
-#### HTML5/Browser – Javascript (works in Chrome/Firefox/Edge/Opera/Safari 11)
-Run the index.html on a local server.
-
-#### iOS - ObjectiveC/C++
-Open the Xcode project. Attach your iOS device and run the example app on your device.
-
 #### Android - Java 
 Open the Android Studio project. Attach your Android device and run the example app on your device.
-
-#### macOS - C++ utilizing OpenCV for camera access and drawing
-Have [OpenCV](http://opencv.org/) brewed (opencv3) on your system. Open the Xcode project and just run it on your Mac.
-
-#### Windows - C++ utilizing OpenCV for camera access and drawing
-Good luck in trying to compile [OpenCV](http://opencv.org/) for your Windows. Update the Visual Studio (2017) project properties that mention 
-OpenCV. Then run the Release x64 target. Fingers crossed!
-
-#### Adobe AIR - Actionscript 3 on Windows, macOS, iOS and Android 
-Use your preferred IDE. Add the src folder and the ANE itself to your class path and run the example class on your 
-desired device (not in a simulator). Unfortunately we had to discontinue Flash Player (SWF in browser) support.
 
 ### Technical overview
 
@@ -123,37 +96,6 @@ Can you increase the performance?
 Can you make the library smaller?
 + Usually the descriptor would be 80MB and more. It's already only 9MB for most platforms. So: We could go down in 1,5MB steps, but this will also massively accuracy. 
 Once you bought a license you can choose which size you want to go with.
-
-### Release notes
-
-v4.1.0 - 11th July 2018
-
-+ All: Changed 3D calculation model a bit. This might result in slightly different placement and rotationX.
-+ Info: We started to work on BRFv5 (yeha!)
-
-v4.0.1 - 09th November 2017
-
-+ JS: Added: WASM export to Javascript SDK.
-+ JS: Fix: Found a workaround for iOS 11 (in Safari) for starting the camera.
-+ JS: Updated: CreateJS to v1.0.2 (easel) and v1.0.1 (preload).
-+ JS: Updated: ThreeJS to r88.
-+ Minor cleanups
-+ Known issue: JS SDK is slow in Chrome 63 because of this bug: https://bugs.chromium.org/p/chromium/issues/detail?id=768775
-
-v4.0.0 - 20th June 2017
-
-It's done! After over a year of development Tastenkunst is proud to announce the release of BRFv4.
-
-+ Changed: Completely rewritten the C++ core: image handling, face detection and tracking algorithms etc.
-+ Changed: Image data can now be of any site. BRFv4 will handle the scaling internally.
-+ Changed: Point tracking and face tracking can now be done simultaneously.
-+ Changed: Face tracking algorithm changed from ASM to ERT. This comes with an increased file size though (For JS up from 2MB to 10MB)
-+ Added: Multi face tracking. It is now possible to track more than one face.
-+ Added: Example project for native Android (Java, Android Studio project)
-+ Added: Example project for macOS (C++, Xcode project, needs brewed OpenCV for camera handling and drawing)
-+ Added: Example project for Windows (C++, Visual Studio 2017 project, needs OpenCV for camera handling and drawing)
-+ Added: Adobe AIR native extension now supports Windows, macOS, iOS and Android.
-+ Removed: Support for Flash Player (SWF in Browser).
 
 ### Licenses
 
