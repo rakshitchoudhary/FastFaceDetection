@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        android:layout_marginTop="-6dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:minHeight="70dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentStart="true"
+            android:background="#fff">
+
+            <TextView android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Face Detection"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Below are the options for Face Detection, Face Tracking. Please click on any option to check"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Detect Full Face"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+
+            <Button android:id="@+id/btn_full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Start Detection"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Face Filters (Eyes, Nose)"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+
+            <Button android:id="@+id/btn_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Start Detection"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Detect Lips"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Button android:id="@+id/btn_lips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Start Detection"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Detect Eyes"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button android:id="@+id/btn_eyebrow"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Eyebrow"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textColor="#000000"/>
+
+                <Button android:id="@+id/btn_eyeshadow"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Eyeshadow"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textColor="#000000"/>
+
+                <Button android:id="@+id/btn_eyeliner"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Eyeliner"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Detect Face"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <Button android:id="@+id/btn_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Start Detection"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:text="Face Tracking Options"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Detect Smiling Face"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+
+            <Button android:id="@+id/btn_smile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Start Detection"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Detect Yawning Face"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+
+            <Button android:id="@+id/btn_yawn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Start Detection"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:text="Detect Eye Blink"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+
+            <Button android:id="@+id/btn_blink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Start Detection"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

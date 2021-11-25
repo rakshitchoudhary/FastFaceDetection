@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_lips"
+        android:icon="@drawable/ic_face"
+        android:title="Lips">
+    </item>
+    <item
+        android:id="@+id/action_eyebrow"
+        android:icon="@drawable/ic_face"
+        android:title="Eyebrow">
+    </item>
+    <item
+        android:id="@+id/action_eyeliner"
+        android:icon="@drawable/ic_face"
+        android:title="Eyeliner">
+    </item>
+    <item
+        android:id="@+id/action_face"
+        android:icon="@drawable/ic_face"
+        android:title="Face">
+    </item>
+    <item
+        android:id="@+id/action_goggle"
+        android:icon="@drawable/ic_face"
+        android:title="Goggles">
+    </item>
+</menu>
